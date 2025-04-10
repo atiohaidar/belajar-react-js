@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Import komponen React Router
+import { HashRouter, Routes, Route, Link } from 'react-router-dom'; // Import komponen React Router
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import GreetingComponent from './GreetingComponent';
@@ -8,7 +8,7 @@ import TodoListComponent from './TodoListComponent';
 import CounterComponent from './CounterComponent';
 function App() {
   return (
-    <BrowserRouter> {/* Bungkus seluruh aplikasi dengan BrowserRouter */}
+    <HashRouter> {/* Bungkus seluruh aplikasi dengan HashRouter */}
       <div>
         <nav>
           <ul>
@@ -47,7 +47,7 @@ function App() {
           {/* <Route path="*" element={<div>404 Not Found</div>} /> */}
          </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
